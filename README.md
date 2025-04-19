@@ -31,3 +31,32 @@
 cd server
 npm install
 node index.js
+```
+
+## 🌐 Frontend Setup (`client/`)
+
+> Location: `eldercare-tracker/client/`  
+> Built using **React + Vite + Firebase**
+
+### 📂 Key Files & Folders
+
+| Path                           | Purpose                                                  |
+|--------------------------------|----------------------------------------------------------|
+| `src/`                         | Main React source code directory                         |
+| `src/main.jsx`                 | Entry point — renders the `<App />` component            |
+| `src/App.jsx`                  | Root component for app-wide routing                      |
+| `src/pages/Login.jsx`          | Login screen using Firebase Auth                         |
+| `src/pages/Dashboard.jsx`      | Caretaker dashboard with patient info/logs               |
+| `src/components/`              | Folder for reusable UI components                        |
+| `src/utils/firebase.js`        | Firebase config for Auth + Firestore SDK                 |
+| `src/context/AuthContext.jsx`  | (Optional) Auth context for managing global user state   |
+| `.env`                         | Firebase credentials stored as environment variables     |
+| `vite.config.js`               | Vite dev/build configuration                             |
+| `package.json`                 | Frontend dependencies and scripts                        |
+
+### ▶️ To Run Locally
+
+```bash
+cd client
+npm install
+npm run dev
